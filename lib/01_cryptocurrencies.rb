@@ -43,7 +43,7 @@ def menu(hash)
         when 3
             puts "3. Les devises dont le cours est inférieur à 6000"
             puts ""
-            lower = hash.select{|device_crypto,value_crypto| value_crypto.to_i <= 6000} # methode select selection les valeur <= 6000
+            lower = hash.select{|device_crypto,value_crypto| value_crypto.to_i < 6000} # methode select selection les valeur <= 6000
             puts lower
 
             puts ""

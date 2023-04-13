@@ -13,7 +13,7 @@ puts ""
 
 puts " 3. Combien y-a-t'il de handle contenant 5 caractères (le @ ne compte pas pour un caractère)"
 
-long_string = handle_twiter.select{|str| str.length >= 5} # on selectione les string >= 5
+long_string = handle_twiter.select{|str| str.length == 5} # on selectione les string >= 5
 puts "il y a #{long_string.length} chaines de plus de 5 caracteres"
 
 puts ""
