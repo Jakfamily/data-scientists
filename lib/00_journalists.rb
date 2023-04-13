@@ -134,7 +134,7 @@ puts sorted_string
 
 puts ""
 
-puts "Trie la liste de handle par taille des handle (les plus petits en premiers, les plus grands après)"
+puts "6. Trie la liste de handle par taille des handle (les plus petits en premiers, les plus grands après)"
 
 sorted_string = handle_twiter.sort_by{|str| str.length}
 puts sorted_string
@@ -142,14 +142,14 @@ puts sorted_string
 puts ""
 
 
-puts "Quelle est la position dans l'array de la personne @epenser ?"
+puts "7. Quelle est la position dans l'array de la personne @epenser ?"
 handle_twiter.include?("@epenser") # include? permet de chercher une string dans un arr 
 index_in_array = handle_twiter.index("@epenser") # index permet d'afficher le numero d'index du mots rechercher 
 puts " tu ma trouveé ! a l'index #{index_in_array} enjoy :-)"
 
 puts ""
 
-puts "Sors-moi une répartition des handle par taille de ces derniers (nombre de handle avec 1 caractère, nombre de handle avec 2 caractères, nombre de handle avec 3 caractères, etc)"
+puts "8. Sors-moi une répartition des handle par taille de ces derniers (nombre de handle avec 1 caractère, nombre de handle avec 2 caractères, nombre de handle avec 3 caractères, etc)"
 
 # On crée un nouveau hash avec des valeurs vides par défaut pour chaque clé
 result = Hash.new { |h, k| h[k] = [] }
