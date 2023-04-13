@@ -57,6 +57,7 @@ def menu(hash)
             puts ""
         when 5 
             puts "5. Quiter"
+            break
         
         else
             puts "Choisissez un choix valide"
