@@ -1,5 +1,3 @@
-require_relative 'fichier-test0.rb'
-
 puts " 1. Combien y a-t-il de handle dans cette array ?"
 
 puts "il y a exactement #{handle_twiter.length} handle twiter"

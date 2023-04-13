@@ -20,13 +20,13 @@ def menu(handle_twiter)
       case choix
       when 1
         puts " 1.Combien y a-t-il de handle dans cette array ?"
-
+        puts ""
         puts "il y a exactement #{handle_twiter.length} handle twiter"
         puts ""
         
       when 2
         puts " 2. Quel est le handle le plus court de cette liste ?"
-
+        puts ""
         short_string = handle_twiter.select{|str| str.length <5}# on selectione les string <5 avec la methode select
         puts "il y a #{short_string.length} chaines de moins de 5 caracteres qui est #{short_string.sort}" #on renvoie la valeur dansun nouveau tableau avec la methode sort 
 
@@ -34,7 +34,7 @@ def menu(handle_twiter)
   
       when 3
         puts " 3. Combien y-a-t'il de handle contenant 5 caractères (le @ ne compte pas pour un caractère)"
-
+        puts ""
         long_string = handle_twiter.select{|str| str.length >= 5} # on selectione les string >= 5
         puts "il y a #{long_string.length} chaines de plus de 5 caracteres"
 
@@ -42,26 +42,28 @@ def menu(handle_twiter)
   
       when 4
         puts "4. Combien commencent par une majuscule (première lettre juste après le @) ?"
-
+        puts ""
         count = handle_twiter.select {|str| str =~ /@([A-Z])/}.count
         puts "il y a #{count} handle twiter commencent par une majuscule après le @"
 
         puts ""
       when 5
         puts "5. Trie la liste de handle par ordre alphabétique."
+        puts ""
         sorted_string = handle_twiter.sort_by{|str| str.split("@").last.downcase}
         puts sorted_string
 
         puts ""
       when 6
         puts "6. Trie la liste de handle par taille des handle (les plus petits en premiers, les plus grands après)"
-
+        puts ""
         sorted_string = handle_twiter.sort_by{|str| str.length}
         puts sorted_string
 
         puts ""
       when 7
         puts "7. Quelle est la position dans l'array de la personne @epenser ?"
+        puts ""
         handle_twiter.include?("@epenser") # include? permet de chercher une string dans un arr 
         index_in_array = handle_twiter.index("@epenser") # index permet d'afficher le numero d'index du mots rechercher 
         puts " tu ma trouveé ! a l'index #{index_in_array} enjoy :-)"
@@ -69,7 +71,7 @@ def menu(handle_twiter)
         puts ""
       when 8
         puts "8. Sors-moi une répartition des handle par taille de ces derniers (nombre de handle avec 1 caractère, nombre de handle avec 2 caractères, nombre de handle avec 3 caractères, etc)"
-        
+        puts ""
         result = Hash.new { |h, k| h[k] = [] }
         handle_twiter.each do |string|
         length = string.length
