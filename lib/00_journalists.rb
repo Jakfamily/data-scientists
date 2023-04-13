@@ -50,7 +50,7 @@ def menu(handle_twitter)
       when 5
         puts "5. Trie la liste de handle par ordre alphabétique."
         puts ""
-        sorted_string = handle_twiter.sort_by{|str| str.split("@").last.downcase}
+        sorted_string = handle_twitter.sort_by{|str| str.split("@").last.downcase}
         puts sorted_string
 
         puts ""
