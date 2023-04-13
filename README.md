@@ -1,0 +1,1 @@
+Dans ce projet, tu vas manipuler des arrays et des hashs contenant des centaines d'éléments, le tout via un programme dans un dossier Ruby bien rangé. Ce sera une excellente introduction aux programmes un peu plus funkys que tu verras la semaine prochaine.
