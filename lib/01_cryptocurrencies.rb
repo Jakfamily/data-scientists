@@ -51,13 +51,13 @@ def menu(hash)
             puts "4. La devise la plus chère parmi celles dont le cours est inférieur à 6000."
             puts ""
             # concatenation de deux methodes 
-            expensive = hash.select{|device_crypto,value_crypto| value_crypto.to_i < 6000}.max_by{|device_crypto,value_crypto| value_crypto.to_i <= 6000}
+            expensive = hash.select{|device_crypto,value_crypto| value_crypto.to_i < 6000}.max_by{|device_crypto,value_crypto| value_crypto.to_i < 6000}
             puts expensive
 
             puts ""
         when 5 
             puts "5. Quiter"
-            break
+        
         else
             puts "Choisissez un choix valide"
         end
