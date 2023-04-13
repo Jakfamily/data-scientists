@@ -17,21 +17,21 @@ puts ""
 
 puts "1. La ou les crypto qui ont la plus grosse valeur."
 
-max_value = hash.max_by{|device_crypto,value_crypto| value_crypto.to_i}
+max_value = hash.max_by{|device_crypto,value_crypto| value_crypto.to_i} # methode max_by trouver la valuer la plus chere
 puts max_value
 
 puts ""
 
 puts " 2. La ou les crypto qui ont la plus petite valeur."
 
-min_value = hash.min_by{|device_crypto,value_crypto| value_crypto.to_i}
+min_value = hash.min_by{|device_crypto,value_crypto| value_crypto.to_i} # methode min_by trouve la valeur la moins elever 
 puts min_value
 
 puts ""
 
 puts "3. Les devises dont le cours est inférieur à 6000"
 
-lower = hash.select{|device_crypto,value_crypto| value_crypto.to_i <= 6000}
+lower = hash.select{|device_crypto,value_crypto| value_crypto.to_i <= 6000} # methode select selection les valeur <= 6000
 puts lower
 
 puts " 4. La devise la plus chère parmi celles dont le cours est inférieur à 6000."
