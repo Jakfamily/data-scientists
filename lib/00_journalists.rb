@@ -35,7 +35,7 @@ def menu(handle_twitter)
       when 3
         puts " 3. Combien y-a-t'il de handle contenant 5 caractères (le @ ne compte pas pour un caractère)"
         puts ""
-        long_string = handle_twitter.select{|str| str.length >= 5} # on selectione les string >= 5
+        long_string = handle_twitter.select{ |str| str.gsub('@', '').length == 5 } # on selectione les string >= 5
         puts "il y a #{long_string.length} chaines de plus de 5 caracteres"
 
         puts ""
